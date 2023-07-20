@@ -1,0 +1,133 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 100%;  
+  height: 100vh;
+  background: #191718;
+  box-sizing: border-box;
+  float: left;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  color: #AAA;
+  position: relative;
+  font-family: Roboto;
+  padding-left:16px;
+  padding-top:14px;
+  padding-bottom: 11px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sidebar li:hover{
+  background-color: #5C5C5C;
+  color: #FFF;
+  cursor: pointer;
+}
+.sidebar li::after {
+  content: '';
+  position: absolute;
+  font-weight: 700;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px; 
+  background-color: #5C5C5C;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  padding: 30px;
+}
+.title{
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.description{
+  color: #000;
+  text-align: center;
+  margin: 18px 238px 18px 238px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mission{
+  width: 100%;
+  margin: 30px 129px 0px 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #EFEFEF;
+  text-align: center; 
+  height: 210px;
+}
+.logo img{
+  width: 310px;
+  height: 122px; 
+}
+.item{
+  margin-top: 20px;
+}
+.item h3{
+  margin-bottom: 10px;
+}
+.item p{
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.imgDetail{
+  width: 128px;
+  height: 128px;
+}
+footer {
+  color: #3E3E3E;
+  padding: 20px;
+  position: fixed;
+  width: 100%;  
+  bottom: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #DEDEDE; /* Border color */
+}
